@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import fr.iagl.opl.wfuzz.MrRobot.entity.File;
 import fr.iagl.opl.wfuzz.MrRobot.entity.Login;
-import fr.iagl.opl.wfuzz.MrRobot.repository.FilesRepository;
+import fr.iagl.opl.wfuzz.MrRobot.repository.FileRepository;
 import fr.iagl.opl.wfuzz.MrRobot.repository.LoginRepository;
 
 @SpringBootApplication
@@ -19,7 +19,7 @@ import fr.iagl.opl.wfuzz.MrRobot.repository.LoginRepository;
 public class MrRobotApplication {
 
 	@Autowired LoginRepository loginRepository;
-	@Autowired FilesRepository filesRepository;
+	@Autowired FileRepository fileRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(MrRobotApplication.class, args);
@@ -30,8 +30,8 @@ public class MrRobotApplication {
 		loginRepository.save(new Login("arthur", "supersecure"));
 		loginRepository.save(new Login("marvin", "robot"));
 		loginRepository.save(new Login("ford", "h2g2"));
-		filesRepository.save(new File("arthur", "arthur-description"));
-		filesRepository.save(new File("arthur", "h2g2.jpeg"));
-		filesRepository.save(new File("marvin", "marvin.jpeg"));
+		fileRepository.save(new File("arthur", "arthur-description"));
+		fileRepository.save(new File("arthur", "h2g2.jpeg"));
+		fileRepository.save(new File("marvin", "marvin.jpeg"));
 	}
 }
