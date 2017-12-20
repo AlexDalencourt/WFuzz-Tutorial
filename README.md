@@ -9,7 +9,7 @@
 ### Part 1 : Overview
 
 Using : 
-* playload : file : fuzzfile/part1-1.txt
+* payload : file : fuzzfile/part1-1.txt
 * url : localhost:8080
 
 Execution :
@@ -17,7 +17,7 @@ Execution :
 
 Command details:
 * -c : add color to result
-* -z : specify playload : file,fuzzfile/part1-1.txt
+* -z : specify payload : file,fuzzfile/part1-1.txt
 * url : url to use
 * FUZZ : pattern to replace
 
@@ -36,7 +36,7 @@ The new Server log :
 Using second pattern : 
 **Use two files**
 
-* playload : file : fuzzfile/part1-1.txt fuzzfile/part1-2.txt
+* payload : file : fuzzfile/part1-1.txt fuzzfile/part1-2.txt
 
 Execution :
 ''wfuzz -c -z file,fuzzfile/part1-1.txt -z file,fuzzfile/part1-2.txt http://localhost:8080/FUZZ/FUZ2Z''
@@ -49,3 +49,8 @@ Ignore useless results it's possible (for example 404 errors) :
 
 ### Part 2 : Know what accessible resources with recursive execution
 
+### Other : help
+
+* help : ''wfuzz -h''
+* List of available payloads : ''wfuzz -e payload''
+* List of available encodings : ''wfuzz -e encoders''
