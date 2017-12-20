@@ -3,12 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>MrRobot Cloud</title>
+<link rel="stylesheet" href="main.css"/>
 </head>
 <body>
-	<form action="/login">
-		<label>User</label><input type="text" name="login"/>
-		<label>Password</label><input type="password" name="pwd"/>
+	<div id="errorLogin" name="errorLogin" class="hidden">
+		Login Failure
+	</div>
+	<form id="loginForm" name="loginForm">
+		<label>User</label><input type="text" id="login" name="login"/>
+		<label>Password</label><input type="password" id="pwd" name="pwd"/>
 		<input type="submit"/>
 	</form>
 </body>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </html>
