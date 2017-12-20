@@ -3,9 +3,11 @@ package fr.iagl.opl.wfuzz.MrRobot.entity;
 import java.io.Serializable;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@Entity
 @Table
 public class Login implements Serializable {
 	/**
