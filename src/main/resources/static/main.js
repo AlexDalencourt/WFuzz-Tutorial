@@ -25,7 +25,13 @@ function connect(event) {
 }
 
 function listFiles(){
-	//<a href="#" class="list-group-item list-group-item-action">item</a>
+	$.get(
+		"http://localhost:8080/filesList/" + username,
+		function(data, status){
+			// TODO
+			// <a href="#" class="list-group-item list-group-item-action">item</a>
+		}
+	);
 }
 
 loginForm.addEventListener("submit", connect, true);
