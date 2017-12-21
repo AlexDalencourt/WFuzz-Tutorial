@@ -17,6 +17,7 @@ function connect(event) {
 			if(status == "success"){
 				loginFormRaw.classList.add("hidden");
 				errorLogin.classList.add("hidden");
+				document.querySelector("#filesList").classList.remove("hidden");
 				userName = $("#login").val();
 				listFiles();
 			}
@@ -26,10 +27,19 @@ function connect(event) {
 
 function listFiles(){
 	$.get(
-		"http://localhost:8080/filesList/" + username,
+		"http://localhost:8080/filesList/" + userName,
 		function(data, status){
-			// TODO
-			// <a href="#" class="list-group-item list-group-item-action">item</a>
+			if(status == "success"){
+				var divroot = document.querySelector("#files");
+				data.forEach(function(element){
+					var linkElement = document.createElement('a');
+					var textElement = document.createTextNode(element);
+					linkElement.href = "/file/" + element;
+					linkElement.classList.add("list-group-item");
+					linkElement.appendChild(textElement);
+					divroot.appendChild(linkElement);
+				});
+			}
 		}
 	);
 }
