@@ -1,4 +1,5 @@
 var loginForm = document.querySelector("#loginForm");
+var loginFormRaw = document.querySelector("#loginFormRaw");
 var errorLogin = document.querySelector("#errorLogin");
 
 function connect(event) {
@@ -12,7 +13,7 @@ function connect(event) {
 		},
 		function(data, status){
 			if(status == "success"){
-				loginForm.classList.add("hidden");
+				loginFormRaw.classList.add("hidden");
 				errorLogin.classList.add("hidden");
 			}
 		}
