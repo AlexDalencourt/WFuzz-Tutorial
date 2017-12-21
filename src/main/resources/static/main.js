@@ -2,6 +2,8 @@ var loginForm = document.querySelector("#loginForm");
 var loginFormRaw = document.querySelector("#loginFormRaw");
 var errorLogin = document.querySelector("#errorLogin");
 
+var userName;
+
 function connect(event) {
 	event.preventDefault();
 	
@@ -15,9 +17,14 @@ function connect(event) {
 			if(status == "success"){
 				loginFormRaw.classList.add("hidden");
 				errorLogin.classList.add("hidden");
+				userName = $("#login").val();
+				listFiles();
 			}
 		}
 	).fail(function(xhr, status, error){errorLogin.classList.remove("hidden")});
+}
+
+function listFiles(){
 }
 
 loginForm.addEventListener("submit", connect, true);
