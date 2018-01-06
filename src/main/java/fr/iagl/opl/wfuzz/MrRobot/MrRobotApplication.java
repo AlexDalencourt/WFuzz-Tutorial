@@ -1,6 +1,10 @@
 package fr.iagl.opl.wfuzz.MrRobot;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import javax.annotation.PostConstruct;
+import javax.xml.bind.DatatypeConverter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -26,10 +30,16 @@ public class MrRobotApplication {
 	}
 	
 	@PostConstruct
-	public void init() {
+	public void init() throws NoSuchAlgorithmException {
 		loginRepository.save(new Login("arthur", "supersecure"));
 		loginRepository.save(new Login("marvin", "robot"));
 		loginRepository.save(new Login("ford", "h2g2"));
+		MessageDigest md = MessageDigest.getInstance("MD5");
+	    md.update("trillian".getBytes());
+	    byte[] digest = md.digest();
+	    String myHash = DatatypeConverter
+	      .printHexBinary(digest).toUpperCase();
+		loginRepository.save(new Login("zaphod", myHash.toLowerCase()));
 		fileRepository.save(new File("arthur", "arthur-description"));
 		fileRepository.save(new File("arthur", "h2g2.jpeg"));
 		fileRepository.save(new File("marvin", "marvin.jpeg"));

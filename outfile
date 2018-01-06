@@ -1,0 +1,172 @@
+<html><head></head><body bgcolor=#000000 text=#FFFFFF><h1>Fuzzing http://localhost:8080/login</h1>
+<table border="1">
+<tr><td>#request</td><td>Code</td><td>#lines</td><td>#words</td><td>Url</td></tr>
+
+<tr><td>00001</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>marvin - 52a516ca6df436828d9c0d26e31ef704</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="marvin"><input type="hidden" name="pwd" value="52a516ca6df436828d9c0d26e31ef704"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00002</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>marvin - 87b7cb79481f317bde90c116cf36084b</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="marvin"><input type="hidden" name="pwd" value="87b7cb79481f317bde90c116cf36084b"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00003</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>marvin - 74197366fad2c43d5a0df19c78cf3efa</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="marvin"><input type="hidden" name="pwd" value="74197366fad2c43d5a0df19c78cf3efa"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00004</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>marvin - a1d0c6e83f027327d8461063f4ac58a6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="marvin"><input type="hidden" name="pwd" value="a1d0c6e83f027327d8461063f4ac58a6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00005</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>marvin - 098f6bcd4621d373cade4e832627b4f6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="marvin"><input type="hidden" name="pwd" value="098f6bcd4621d373cade4e832627b4f6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00006</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>marvin - 9d40b3f333458234a3fee99bc7718fdb</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="marvin"><input type="hidden" name="pwd" value="9d40b3f333458234a3fee99bc7718fdb"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00007</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>ford - 52a516ca6df436828d9c0d26e31ef704</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="ford"><input type="hidden" name="pwd" value="52a516ca6df436828d9c0d26e31ef704"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00008</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>ford - 87b7cb79481f317bde90c116cf36084b</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="ford"><input type="hidden" name="pwd" value="87b7cb79481f317bde90c116cf36084b"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00009</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>ford - 74197366fad2c43d5a0df19c78cf3efa</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="ford"><input type="hidden" name="pwd" value="74197366fad2c43d5a0df19c78cf3efa"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00010</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>ford - a1d0c6e83f027327d8461063f4ac58a6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="ford"><input type="hidden" name="pwd" value="a1d0c6e83f027327d8461063f4ac58a6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00011</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>ford - 098f6bcd4621d373cade4e832627b4f6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="ford"><input type="hidden" name="pwd" value="098f6bcd4621d373cade4e832627b4f6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00014</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>arthur - 87b7cb79481f317bde90c116cf36084b</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="arthur"><input type="hidden" name="pwd" value="87b7cb79481f317bde90c116cf36084b"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00019</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>zaphod - 52a516ca6df436828d9c0d26e31ef704</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="zaphod"><input type="hidden" name="pwd" value="52a516ca6df436828d9c0d26e31ef704"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00012</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>ford - 9d40b3f333458234a3fee99bc7718fdb</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="ford"><input type="hidden" name="pwd" value="9d40b3f333458234a3fee99bc7718fdb"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00013</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>arthur - 52a516ca6df436828d9c0d26e31ef704</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="arthur"><input type="hidden" name="pwd" value="52a516ca6df436828d9c0d26e31ef704"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00015</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>arthur - 74197366fad2c43d5a0df19c78cf3efa</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="arthur"><input type="hidden" name="pwd" value="74197366fad2c43d5a0df19c78cf3efa"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00016</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>arthur - a1d0c6e83f027327d8461063f4ac58a6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="arthur"><input type="hidden" name="pwd" value="a1d0c6e83f027327d8461063f4ac58a6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00017</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>arthur - 098f6bcd4621d373cade4e832627b4f6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="arthur"><input type="hidden" name="pwd" value="098f6bcd4621d373cade4e832627b4f6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00020</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>zaphod - 87b7cb79481f317bde90c116cf36084b</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="zaphod"><input type="hidden" name="pwd" value="87b7cb79481f317bde90c116cf36084b"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00018</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>arthur - 9d40b3f333458234a3fee99bc7718fdb</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="arthur"><input type="hidden" name="pwd" value="9d40b3f333458234a3fee99bc7718fdb"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00021</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>zaphod - 74197366fad2c43d5a0df19c78cf3efa</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="zaphod"><input type="hidden" name="pwd" value="74197366fad2c43d5a0df19c78cf3efa"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00022</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>zaphod - a1d0c6e83f027327d8461063f4ac58a6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="zaphod"><input type="hidden" name="pwd" value="a1d0c6e83f027327d8461063f4ac58a6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00024</td>
+<td><font color=#00aa00>202</font></td>
+<td>   0L</td>
+<td>    1W</td>
+<td><table><tr><td>zaphod - 9d40b3f333458234a3fee99bc7718fdb</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="zaphod"><input type="hidden" name="pwd" value="9d40b3f333458234a3fee99bc7718fdb"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+
+<tr><td>00023</td>
+<td><font color=#FF0000>401</font></td>
+<td>   0L</td>
+<td>    0W</td>
+<td><table><tr><td>zaphod - 098f6bcd4621d373cade4e832627b4f6</td><td><form method="post" action="http://localhost:8080/login"><input type="hidden" name="login" value="zaphod"><input type="hidden" name="pwd" value="098f6bcd4621d373cade4e832627b4f6"><input type=submit name=b value="send POST"></form></td></tr></table></td>
+</tr>
+</table></body></html><h5>Wfuzz by EdgeSecurity<h5>
