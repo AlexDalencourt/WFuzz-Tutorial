@@ -59,6 +59,7 @@ Ignore useless results it's possible (for example 404 errors) :
 
 It is possible to send a POST request (or other http request) with the parameter **-d**. We will try to connect to our application with fuzz
 ```wfuzz -c -z file,fuzzfile/part1-1.txt -z file,fuzzfile/part1-2.txt -d "login=FUZZ&pwd=FUZ2Z" http://localhost:8080/login```
+**-X method** is for other HTTP methods.
 
 It is possible to specify HTTP heard with **-H "header=test&header2=FUZZ"**
 
