@@ -60,6 +60,8 @@ Ignore useless results it's possible (for example 404 errors) :
 It is possible to send a POST request (or other http request) with the parameter **-d**. We will try to connect to our application with fuzz
 ```wfuzz -c -z file,fuzzfile/part1-1.txt -z file,fuzzfile/part1-2.txt -d "login=FUZZ&pwd=FUZ2Z" http://localhost:8080/login```
 
+It is possible to specify HTTP heard with **-H "header=test&header2=FUZZ"**
+
 ### Part 2 : Know what accessible resources with recursive execution
 
 By default, Wfuzz operate from the first repertory level.
@@ -99,6 +101,6 @@ wfuzz -c -o HTML -z file,fuzzfile/part3-1.txt -z file,fuzzfile/part3-2.txt,md5 -
 
 ### Other : help
 
-* help : `wfuzz -h`
+* help : `wfuzz --help`
 * List of available payloads : `wfuzz -e payload`
 * List of available encodings : `wfuzz -e encoders`
